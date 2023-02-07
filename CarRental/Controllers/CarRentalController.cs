@@ -39,7 +39,7 @@ WYBIERZ 1,2 LUB 3
                     1 => GetClientsAndCarsView(),
                     2 => RentCarClientMenu(),
                     3 => "",
-                    _ => "Wćiśnieto niepoprawny klawisz.\n"
+                    _ => "Nieprawidłowa liczba.\n"
                 };
 
                 Console.WriteLine(result);
@@ -63,7 +63,7 @@ WYBIERZ 1,2 LUB 3
             }
             catch (Exception)
             {
-                Console.WriteLine("Niepoprawny klient.\n");
+                Console.WriteLine("Niepoprawne id.\n");
                 MainMenu();
                 return "";
             }
@@ -107,7 +107,7 @@ WYBIERZ 1,2 LUB 3
             }
             catch (Exception)
             {
-                Console.WriteLine("Nieprawidłowa ilość dni wynajmu.\n");
+                Console.WriteLine("Niepoprawna liczba dni wynajmu.\n");
                 MainMenu();
                 return "";
             }

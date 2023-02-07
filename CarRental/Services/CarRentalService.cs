@@ -33,10 +33,10 @@ Id | Imię i nazwisko | Data wydania prawa jazdy
             string result =
                 @"LISTA SAMOCHODÓW:
 ---------------------------
-Id | Model | Segment | Rodzaj paliwa | Cena za dobę | Status 
+Id | Model | Segment | Rodzaj paliwa | Cena za dobę | Status
 ";
 
-            carRepository.Cars.ForEach(car => result += $"{car.Id} | {car.Model}| {car.Status} | {car.FuelType} | {car.Price} PLN | {car.Status}\n");
+            carRepository.Cars.ForEach(car => result += $"{car.Id} | {car.Model} | {car.Segment} | {car.FuelType} | {car.Price} PLN | {car.Status}\n");
 
             return result;
         }
